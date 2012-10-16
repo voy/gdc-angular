@@ -48,7 +48,22 @@ var ViewDashboardCntl = function($scope, $location, $routeParams, dashboardView)
                 };
             });
 
-        //$scope.filters = res.content.filters;
+        function findFilterContent(id) {
+            var contents = res.content.filters;
+            for (var i = 0; i < contents.length; i++) {
+                if (contents[i].filterItemContentView.id === id) {
+                    return contents[i].filterItemContentView;
+                }
+            }
+        }
+
+        for (var i = 0; i < currentTabItems.length; i++) {
+            if (Utils.objectType(currentTabItems[i]) == 'filterItem') {
+                var filter = currentTabItems[i].filterItem;
+                filter.content = findFilterContent(filter.contentId);
+            }
+        }
+
         $scope.tabs = tabs;
         $scope.items = currentTabItems;
     }.withScope($scope));

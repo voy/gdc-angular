@@ -22,6 +22,13 @@ angular.module('gdDashboardViews', []).
                 width: item.sizeX,
                 height: item.sizeY
             }));
+        },
+
+        filterItem: function(item, el) {
+            el.append($('<select>').attr({
+                width: item.sizeX,
+                height: item.sizeY
+            }).append('<option>'+item.content.label+'</option>'));
         }
     }).
     directive('dashboarditem', function(dashboardItemFactory) {

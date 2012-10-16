@@ -19,3 +19,7 @@
     border: 1px dashed rgba(255, 0, 0, 0.1);
     overflow: hidden;
 }
+
+.filterItem select {
+    width: 100%;
+}

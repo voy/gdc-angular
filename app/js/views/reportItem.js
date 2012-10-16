@@ -2,6 +2,9 @@
 
 (function(angular) {
 
+
+// TODO move DOM markup to templates
+
 function renderImage(item, el, imageResult) {
     el.text('Fetching image result...');
     $.get(imageResult).done(function(data) {
