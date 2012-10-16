@@ -1,0 +1,59 @@
+body {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.textItem {
+    overflow: hidden;
+}
+
+.textItem.small {
+    font-size: 12px;
+    height: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.textItem.middle {
+    font-size: 18px;
+    height: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.textItem.big {
+    font-size: 12px;
+    color: #777;
+}
+
+.lineItem.horizontal div {
+    margin-top: 5px;
+    border-top: 1px solid #d0d0d0;
+}
+
+.lineItem.vertical div {
+    margin-left: 5px;
+    border-left: 1px solid #d0d0d0;
+}
+
+.grid {
+    width: 100%;
+    line-height: 21px;
+}
+
+.grid {
+    text-align: right;
+    font-style: fixed;
+    font-size: 12px;
+}
+
+.grid td {
+    border-bottom: 1px solid #E9E9E9;
+    padding: 2px 5px;
+}
+
+.grid .even {
+    background: #f8f8f8;
+}
+.grid .odd {
+    background: #fff;
+}

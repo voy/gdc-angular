@@ -1,0 +1,10 @@
+
+<div ng-controller="SelectDashboardCntl">
+    <p ng-hide="dashboards">Loading...</p>
+    <ul class="dashboardSelector">
+        <li ng-repeat="d in dashboards">
+            <a ng-click="openDashboard(d)">{{ d.title }}</a>
+        </li>
+    </ul>
+    <hr/>
+</div>

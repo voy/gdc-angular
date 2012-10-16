@@ -1,0 +1,47 @@
+
+header {
+    height: 40px;
+    background: url('../images/header-bg.png') top left repeat-x;
+}
+
+#headerContent {
+    background: url('../images/header-logo.png') 0px 8px no-repeat;
+    margin: 0 auto;
+    width: 970px;
+    height: 40px;
+    padding-left: 150px;
+    color: white;
+}
+#headerContent a {
+    color: white;
+}
+
+nav, #headerContent > div, #projects, #profile  {
+    display: inline-block;
+}
+
+#headerContent .profile {
+    font-size: 12px;
+}
+
+nav {
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.ng-view {
+    margin: 0 auto;
+    width: 970px;
+}
+
+#projects {
+    display: inline-block;
+    margin-left: 20px;
+}

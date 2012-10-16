@@ -1,0 +1,15 @@
+
+#loginform {
+    width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #eeeeee;
+}
+
+#loginform input, #loginform button {
+    font-size: 22px;
+}
+
+#loginform p {
+    height: 40px;
+}

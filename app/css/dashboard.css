@@ -1,0 +1,21 @@
+
+.dashboardSelector {
+    margin-top: 10px;
+}
+
+.dashboardTabs li, .dashboardSelector li {
+    display: inline-block;
+    margin: 0 0 10px 10px;
+}
+
+.dashboardContent {
+    position: relative;
+    /*height: 800px;*/
+    border: 1px solid gray;
+}
+
+.dashboarditem {
+    position: absolute;
+    border: 1px dashed rgba(255, 0, 0, 0.1);
+    overflow: hidden;
+}

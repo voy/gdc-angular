@@ -1,0 +1,17 @@
+
+
+<div ng-include="'partials/dashboard/select.html'"></div>
+
+<p ng-hide="tabs">Loading dashboard...</p>
+
+<ul class="dashboardTabs">
+    <li ng-repeat="tab in tabs">
+        <a ng-click="openTab(tab)">{{ tab.title }}</a>
+    </li>
+</ul>
+
+<div class="dashboardContent">
+
+    <div ng-repeat="item in items" class="dashboarditem"></div>
+
+</div>
